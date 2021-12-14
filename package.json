@@ -9,8 +9,8 @@
     "test": "jest",
     "codegen": "./node_modules/.bin/subql codegen"
   },
-  "homepage": "https://github.com/subquery/subql-starter",
-  "repository": "github:subquery/subql-starter",
+  "homepage": "https://github.com/vkhnychenko/subql-account-balance",
+  "repository": "github:vkhnychenko/subql-account-balance",
   "files": [
     "dist",
     "schema.graphql",

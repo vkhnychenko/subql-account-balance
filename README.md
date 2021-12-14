@@ -1,7 +1,34 @@
 # SubQuery - Account Balance
 
-
 The balance of the subquery - account is an example of displaying the balances of all accounts in the Polkadot network.
+
+## Configure your project
+
+In the starter package, we have provided a simple example of project configuration. You will be mainly working on the following files:
+
+- The Manifest in `project.yaml`
+- The GraphQL Schema in `schema.graphql`
+- The Mapping functions in `src/mappings/` directory
+
+For more information on how to write the SubQuery, 
+check out our doc section on [Define the SubQuery](https://doc.subquery.network/define_a_subquery.html) 
+
+#### Code generation
+
+In order to index your SubQuery project, it is mandatory to build your project first.
+Run this command under the project directory.
+
+````
+yarn codegen
+````
+
+## Build the project
+
+In order to deploy your SubQuery project to our hosted service, it is mandatory to pack your configuration before upload.
+Run pack command from root directory of your project will automatically generate a `your-project-name.tgz` file.
+
+```
+yarn build
 ```
 
 ## Indexing and Query
@@ -14,6 +41,7 @@ Under the project directory run following command:
 ```
 docker-compose pull && docker-compose up
 ```
+
 #### Query the project
 
 Open your browser and head to `http://localhost:3000`.
